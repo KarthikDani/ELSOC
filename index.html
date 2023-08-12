@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELSOC Week</title>
+    
+    <title>ELSOC Week 2023</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -22,7 +24,7 @@
 
         /* Header Styles */
         #home {
-            background-image: url('media/background.jpg');
+            background-image: url('media/elsoc_logo.png');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -138,6 +140,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            margin-top: 40%;
             transform: translate(-50%, -50%);
             font-size: 1.8rem;
             font-weight: 800;
@@ -196,9 +199,6 @@
             <h1 class="display-4">
                 Welcome to ELSOC Week
             </h1>
-            <p class="stylish-lead">
-                Join us for a <span class="animated-text">week of exciting</span> electronics events!
-            </p>
         </div>
     </header>
 
@@ -220,6 +220,23 @@
                             <div class="event-tags">
                                 <span class="event-tag">Technology</span>
                                 <span class="event-tag">Innovation</span>
+                            </div>
+                            <button class="register-button" onclick="openRegistrationForm('https://forms.google.com/event1')">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card event-card h-100 border-0">
+                        <div class="event-img">
+                            <img src="media/event1.jpg" alt="Event 1">
+                        </div>
+                        <div class="event-info">
+                            <h5 class="event-title">Raspberry Pi Workshop</h5>
+                            <p class="event-description">Join us for an interactive workshop on the Internet of Things.</p>
+                            <div class="event-tags">
+                                <span class="event-tag">Raspberry PI 4</span>
+                                <span class="event-tag">Embedded Systems</span>
                             </div>
                             <button class="register-button" onclick="openRegistrationForm('https://forms.google.com/event1')">Register Now</button>
                         </div>
