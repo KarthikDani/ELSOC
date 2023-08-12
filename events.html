@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags, CSS links, and other head content -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Other styles... */
+
+        /* Dark Theme Styles */
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+
+            /* Navbar Styles */
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+        /* Event Card Styles */
+        .event-card {
+            border: none;
+            border-radius: 15px;
+            background: #444;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-card .event-img {
+            position: relative;
+            overflow: hidden;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .event-card .event-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .event-card .event-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .event-card .event-info {
+            padding: 20px;
+        }
+
+        .event-card .event-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .event-card .event-description {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .event-card .register-button {
+            background: linear-gradient(to right, #FFB6C1, #FF69B4);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .event-card .register-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.3);
+            background: linear-gradient(to right, #FFA9D1, #FFB6C1);
+        }
+
+        .event-card .event-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .event-card .event-tag {
+            background: #555;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        .row.event-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar code ... -->
+    <!-- Navbar code ... -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/company/electronics-society-bmsce/about/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/elsocbmsce/" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <section id="events" class="bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Upcoming Events</h2>
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <!-- Event card -->
+                    <div class="card event-card h-100 border-0">
+                        <div class="event-img">
+                            <img src="event1.jpg" alt="Event 1">
+                        </div>
+                        <div class="event-info">
+                            <h5 class="event-title">Workshop on Internet of Things</h5>
+                            <p class="event-description">Learn about the latest trends and technologies in IoT.</p>
+                            <div class="event-tags">
+                                <span class="event-tag">Technology</span>
+                                <span class="event-tag">Innovation</span>
+                            </div>
+                            <button class="register-button" onclick="openRegistrationForm('https://forms.google.com/event1')">Join the IoT Revolution</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <!-- Event card -->
+                    <div class="card event-card h-100 border-0">
+                        <div class="event-img">
+                            <img src="event1.jpg" alt="Event 1">
+                        </div>
+                        <div class="event-info">
+                            <h5 class="event-title">Workshop on Internet of Things</h5>
+                            <p class="event-description">Learn about the latest trends and technologies in IoT.</p>
+                            <div class="event-tags">
+                                <span class="event-tag">Technology</span>
+                                <span class="event-tag">Innovation</span>
+                            </div>
+                            <button class="register-button" onclick="openRegistrationForm('https://forms.google.com/event1')">Join the IoT Revolution</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for other events -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the content: Gallery, About Us, Contact, Footer, and Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function openRegistrationForm(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
